@@ -7,10 +7,9 @@ public class PlayerCollision : MonoBehaviour
 
     private void OnCollisionEnter(Collision collisionInfo)
     {
-
-        // Debug.Log(collisionInfo.collider.name);
         if(collisionInfo.collider.tag == "Obstacle")
         {
+            GetComponent<PlayerHealth>().decreaseLife();
             movement.enabled = false;
             FindObjectOfType<GameManager>().EndGame();
         }
