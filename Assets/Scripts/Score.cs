@@ -8,9 +8,13 @@ public class Score : MonoBehaviour
     public Transform player;
     public Text scoreText;
 
+    private float playerScore;
+
     // Update is called once per frame
     void Update()
     {
-        scoreText.text = "Score: " + player.position.z.ToString("0");   
+        playerScore = PlayerPrefs.GetFloat("Player Score");
+        float currentScore = playerScore + player.position.z;
+        scoreText.text = "Score: " + currentScore.ToString("0");
     }
 }

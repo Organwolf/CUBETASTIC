@@ -388,6 +388,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4637434355980288543, guid: ba1259d0998db8c4db60c4985865c97d,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 129081563}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba1259d0998db8c4db60c4985865c97d, type: 3}
 --- !u!1 &129081561 stripped
@@ -404,14 +409,14 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &129081563 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4656747061833714583, guid: ba1259d0998db8c4db60c4985865c97d,
+  m_CorrespondingSourceObject: {fileID: 4637434356395416797, guid: ba1259d0998db8c4db60c4985865c97d,
     type: 3}
   m_PrefabInstance: {fileID: 129081560}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29fadfd8dc02044fb817b5716b73a35c, type: 3}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &279803171
@@ -505,6 +510,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: JumpOverObstacle (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6291056920434586003, guid: bf92ba6f9d556459fb26915e565f33f8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 6039874830318249440, guid: bf92ba6f9d556459fb26915e565f33f8,
         type: 3}
@@ -746,6 +756,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: JumpOverObstacle (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6291056920434586003, guid: bf92ba6f9d556459fb26915e565f33f8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 6039874830318249440, guid: bf92ba6f9d556459fb26915e565f33f8,
         type: 3}
@@ -1249,6 +1264,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: JumpOverObstacle (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6291056920434586003, guid: bf92ba6f9d556459fb26915e565f33f8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 6039874830318249440, guid: bf92ba6f9d556459fb26915e565f33f8,
         type: 3}
@@ -1781,8 +1801,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   restartDelay: 1
   completeLevelUI: {fileID: 129081561}
-  lifePanel: {fileID: 129081563}
-  lives: 2
+  player: {fileID: 421881095}
 --- !u!4 &1430130616
 Transform:
   m_ObjectHideFlags: 0
@@ -2154,6 +2173,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 1430130615}
+  scoreText: {fileID: 129081563}
 --- !u!1001 &1734985390
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2165,6 +2185,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: JumpOverObstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6291056920434586003, guid: bf92ba6f9d556459fb26915e565f33f8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 6039874830318249440, guid: bf92ba6f9d556459fb26915e565f33f8,
         type: 3}
@@ -2619,7 +2644,7 @@ PrefabInstance:
         type: 3}
       propertyPath: lifePanel
       value: 
-      objectReference: {fileID: 129081563}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c760c71ebb3640609384e20578c867b, type: 3}
 --- !u!1001 &7729650417622260511

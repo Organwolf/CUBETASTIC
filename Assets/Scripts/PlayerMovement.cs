@@ -36,7 +36,6 @@ public class PlayerMovement : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         collision.gameObject.CompareTag("Obstacle");
-        Debug.Log("Collision detected");
         onGround = true;
     }
 }
