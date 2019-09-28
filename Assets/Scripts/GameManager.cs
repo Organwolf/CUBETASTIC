@@ -13,13 +13,6 @@ public class GameManager : MonoBehaviour
         if (gameHasEnded == false)
         {
             gameHasEnded = true;
-            Debug.Log("Game Over");
-            //var prevScore = PlayerPrefs.GetFloat("Player Score");
-            //var prevScore = 0f;
-            //var currentScore = prevScore + player.position.z;
-            //PlayerPrefs.SetFloat("Players Score", currentScore);
-            //Debug.Log("Total Score: " + currentScore);
-            //Debug.Log("Total Score: " + PlayerPrefs.GetFloat("Player Score"));
             Invoke("Restart", restartDelay);
         }
     }
@@ -33,7 +26,5 @@ public class GameManager : MonoBehaviour
     {
         PlayerPrefs.SetFloat("Player Score", PlayerPrefs.GetFloat("Player Score") + player.position.z);
         completeLevelUI.SetActive(true);
-        Debug.Log("Score:" + PlayerPrefs.GetFloat("Player Score").ToString("0"));
-        Debug.Log("Completed Level!");
     }
 }

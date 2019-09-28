@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class InitialScore : MonoBehaviour
 {
@@ -10,8 +8,5 @@ public class InitialScore : MonoBehaviour
     {
         // PlayerPrefs -> set the score to 0
         PlayerPrefs.SetFloat("Player Score", initialScore);
-        //PlayerPrefs.SetFloat("Player Score", 14.5f);
-        //Debug.Log(PlayerPrefs.GetFloat("Player Score"));
-
     }
 }
